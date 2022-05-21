@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<title>Atrativos Turísticos - Campinas/SP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body class="w3-pale-green">
+
+<div class="w3-container">
+  <h2 class="w3-center w3-green w3-xxlarge w3-animate-zoom">Tourist Spots in Campinas/SP</h2>
+  <p class="w3-center">Here you can find the most required Tourist Spots of Campinas/SP because if you love green you love Campinas!</p>
+</div>
+
+<div class="w3-content w3-display-container w3-pale-green w3-animate-opacity">
+
+<div class="w3-display-container w3-center mySlides">
+  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/b3/6a/7d/parque-do-taquaral-parque.jpg?w=500&h=400&s=1" style="height: 400px">
+  <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">
+    Parque Portugal - Taquaral
+  </div>
+</div>
+
+<div class="w3-display-container w3-center mySlides">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/37/5d/48/bem-cuidado.jpg?w=500&h=-1&s=1" style="height: 400px">
+    <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">
+    Bosque dos Jequitiás - Bosque
+    </div>
+  </div>
+
+  <div class="w3-display-container w3-center mySlides">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/18/7a/79/vista-terrea.jpg?w=500&h=400&s=1" style="height: 400px">
+    <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">
+    Pedreira do Chapadão - Jardim Chapadão
+    </div>
+  </div>
+
+  <div class="w3-display-container w3-center mySlides">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/01/21/7a/20180805-152338-largejpg.jpg?w=500&h=400&s=1" style="height: 400px">
+    <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">
+    Escola de Cadetes - Jardim Chapadão
+    </div>
+  </div>
+
+   <div class="w3-display-container w3-center mySlides">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/9b/ed/8f/parque-ecologico-monsenhor.jpg?w=500&h=400&s=1" style="height: 400px">
+    <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">
+    Parque Ecológico Monsenhor Emílio José Salim - Vila Brandina
+    </div>
+  </div>
+
+  <div class="w3-display-container w3-center mySlides">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/70/d0/ae/fb-img-1542645496572.jpg?w=300&h=-1&s=1" style="height: 400px">
+    <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">
+    Dom Pedro Shopping - Parque Dom Pedro
+    </div>
+  </div>
+          
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<div class="w3-container">
+    
+    <h6 class="w3-center w3-green w3-animate-zoom">Website made by GEOVANE RAMIREZ</h6>
+    <p class="w3-center"> Font of images: <a href="https://www.tripadvisor.com.br/Attractions-g303605-Activities-Campinas_State_of_Sao_Paulo.html">trip advidor website</a>
+         - website made on May 20th 2022, during the systems development technical course in Centro Paula Souza - EaDTEC</p>
+  </div>
+
+</body>
+</html>
